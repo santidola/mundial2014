@@ -1,0 +1,34 @@
+[
+    {
+      "Grupo": "A",
+      "Equipos": ["Brasil", "Croacia", "México", "Camerún"]
+    },
+    {
+      "Grupo": "B",
+      "Equipos": ["España", "Países Bajos", "Chile", "Australia"]
+    },
+    {
+      "Grupo": "C",
+      "Equipos": ["Colombia", "Grecia", "Costa de Marfil", "Japón"]
+    },
+    {
+      "Grupo": "D",
+      "Equipos": ["Uruguay", "Costa Rica", "Inglaterra", "Italia"]
+    },
+    {
+      "Grupo": "E",
+      "Equipos": ["Suiza", "Ecuador", "Francia", "Honduras"]
+    },
+    {
+      "Grupo": "F",
+      "Equipos": ["Argentina", "Bosnia y Herzegovina", "Irán", "Nigeria"]
+    },
+    {
+      "Grupo": "G",
+      "Equipos": ["Alemania", "Portugal", "Ghana", "Estados Unidos"]
+    },
+    {
+      "Grupo": "H",
+      "Equipos": ["Bélgica", "Argelia", "Rusia", "Corea del Sur"]
+    }
+  ]

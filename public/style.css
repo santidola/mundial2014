@@ -1,0 +1,30 @@
+
+
+
+body{
+    background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS9CLyY8eCVpUOD8_KvKtF49U0O_hlXMQiEmA&usqp=CAU");
+    padding: 10px;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.box{
+    width: 300px !important;
+    height: 300px !important;
+}
+.grid{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
+}
+.equipos{
+    display: grid;
+    gap: 10px;
+}
+.titulo{
+    color: blueviolet;
+}
+.title{
+    align-content: center;
+    align-items: center;
+    gap: 10px;
+}
