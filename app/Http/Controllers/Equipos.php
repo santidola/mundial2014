@@ -13,10 +13,13 @@ class Equipos extends Controller
             $equipos = DB::connection()->select("SELECT Equipos.Nombre AS Equipos, Grupos.Nombre AS Grupo
             FROM Equipos
             INNER JOIN Grupos ON Equipos.Id_grupo = Grupos.Id;");
-            $jsonEquipos = json_encode($equipos);
-    
-            // Envía el JSON como respuesta
-            return response()->json($jsonEquipos);
+            $grupos = [];
+            foreach ($equipos as $equipo) {
+                $grupoNombre = $equipo->Grupo;
+                $grupos[$grupoNombre][] = $equipo->Equipos;
+            }
+            
+            return view("welcome", ['grupos' => $grupos]);
         } catch (\Exception $e) {
             die("No se pudo conectar a la base de datos: " . $e->getMessage());
         }
