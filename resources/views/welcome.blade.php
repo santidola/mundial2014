@@ -1,43 +1,3 @@
-<?php
-$grupos = [
-    [
-        "Grupo" => "A",
-        "Equipos" => ["Brasil", "Croacia", "México", "Camerún"]
-    ],
-    [
-        "Grupo" => "B",
-        "Equipos" => ["España", "Países Bajos", "Chile", "Australia"]
-    ],
-    [
-        "Grupo" => "C",
-        "Equipos" => ["Colombia", "Grecia", "Costa de Marfil", "Japón"]
-    ],
-    [
-        "Grupo" => "D",
-        "Equipos" => ["Uruguay", "Costa Rica", "Inglaterra", "Italia"]
-    ],
-    [
-        "Grupo" => "E",
-        "Equipos" => ["Suiza", "Ecuador", "Francia", "Honduras"]
-    ],
-    [
-        "Grupo" => "F",
-        "Equipos" => ["Argentina", "Bosnia y Herzegovina", "Irán", "Nigeria"]
-    ],
-    [
-        "Grupo" => "G",
-        "Equipos" => ["Alemania", "Portugal", "Ghana", "Estados Unidos"]
-    ],
-    [
-        "Grupo" => "H",
-        "Equipos" => ["Bélgica", "Argelia", "Rusia", "Corea del Sur"]
-    ]
-];
-?>
-
-<!DOCTYPE html>
-<html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=, initial-scale=1.0">
@@ -55,14 +15,13 @@ $grupos = [
         
     </div>
     <section class="grid">
-        @foreach ($grupos as $grupo)
+        @foreach ($grupos as $grupoNombre => $equipos)
         <div class="box bg-secondary p-3" id="A">
             <div class="bg-success">
-                <h2 class="text-center">{{$grupo['Grupo']}}</h2>
-
+                <h2 class="text-center">{{$grupoNombre}}</h2>
             </div>
             <div class="equipos">
-                @foreach ($grupo['Equipos'] as $equipo)
+                @foreach ($equipos as $equipo)
                 <div>
                     <span>{{$equipo}}</span>
                 </div>
@@ -72,5 +31,3 @@ $grupos = [
         @endforeach
     </section>
 </body>
-
-</html>

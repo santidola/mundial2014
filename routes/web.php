@@ -19,3 +19,4 @@ Route::get('/', function () {
 });
 
 Route::get("/grupos", ['App\Http\Controllers\Grupos', 'getGrupos']);
+Route::get("/equipos", ['App\Http\Controllers\Equipos', 'getEquipos']);
